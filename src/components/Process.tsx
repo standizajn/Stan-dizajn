@@ -1,8 +1,17 @@
 "use client";
 
+import Image from "next/image";
 import { display } from "@/lib/fonts";
 import { useLanguage } from "@/lib/LanguageProvider";
-import PlaceholderArt from "@/components/PlaceholderArt";
+
+const stepImages = [
+  "/images/process/step-01-konsultacije.jpg",
+  "/images/process/step-02-vizuelizacija.jpg",
+  "/images/process/step-03-ponuda.jpg",
+  "/images/process/step-04-mere.jpg",
+  "/images/process/step-05-proizvodnja.jpg",
+  "/images/process/step-06-montaza.jpg",
+];
 
 export default function Process() {
   const { t } = useLanguage();
@@ -25,11 +34,14 @@ export default function Process() {
               key={step.number}
               className="relative flex min-h-[280px] flex-col justify-end overflow-hidden rounded-sm p-8"
             >
-              <PlaceholderArt
-                seed={i + 2}
-                className="absolute inset-0 h-full w-full text-white opacity-30"
+              <Image
+                src={stepImages[i]}
+                alt={step.title}
+                fill
+                sizes="(min-width: 768px) 50vw, 100vw"
+                className="object-cover"
               />
-              <div className="absolute inset-0 bg-gradient-to-b from-black to-[#2a2a28]" />
+              <div className="absolute inset-0 bg-gradient-to-b from-black/90 to-[#2a2a28]/70" />
               <div className="relative z-10">
                 <span
                   className={`${display.className} text-4xl font-medium text-white/40`}
