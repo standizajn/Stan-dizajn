@@ -2,7 +2,7 @@
 
 import { display } from "@/lib/fonts";
 import { useLanguage } from "@/lib/LanguageProvider";
-import PlaceholderArt from "@/components/PlaceholderArt";
+import AboutSlider from "@/components/AboutSlider";
 
 export default function About() {
   const { t } = useLanguage();
@@ -27,9 +27,7 @@ export default function About() {
             ))}
           </div>
         </div>
-        <div className="relative aspect-[4/5] w-full overflow-hidden rounded-sm bg-[#141414]">
-          <PlaceholderArt seed={7} className="h-full w-full text-white opacity-40" />
-        </div>
+        <AboutSlider />
       </div>
     </section>
   );
