@@ -4,8 +4,8 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 
 const slides = [
-  { src: "/images/about/milutin-stankovic.jpg", alt: "Milutin Stanković, unutrašnji arhitekta" },
-  { src: "/images/about/proizvodnja-tim.jpg", alt: "Tim za proizvodnju nameštaja" },
+  { src: "/images/about/milutin-stankovic.jpg", alt: "Milutin Stanković, unutrašnji arhitekta", fit: "contain" as const },
+  { src: "/images/about/proizvodnja-tim.jpg", alt: "Tim za proizvodnju nameštaja", fit: "contain" as const },
 ];
 
 export default function AboutSlider() {
@@ -27,7 +27,7 @@ export default function AboutSlider() {
           alt={slide.alt}
           fill
           sizes="(min-width: 768px) 50vw, 100vw"
-          className="object-cover transition-opacity duration-700"
+          className={`transition-opacity duration-700 ${slide.fit === "contain" ? "object-contain" : "object-cover"}`}
           style={{ opacity: i === index ? 1 : 0 }}
           priority={i === 0}
         />
