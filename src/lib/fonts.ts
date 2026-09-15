@@ -20,3 +20,11 @@ export const body = localFont({
   variable: "--font-body",
   display: "swap",
 });
+
+export const lightItalic = localFont({
+  src: "../fonts/swiss-721-light-italic.ttf",
+  weight: "300",
+  style: "italic",
+  variable: "--font-light-italic",
+  display: "swap",
+});
