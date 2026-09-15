@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, type FormEvent } from "react";
-import { display } from "@/lib/fonts";
+import { body as bodyFont } from "@/lib/fonts";
 import { useLanguage } from "@/lib/LanguageProvider";
 import { siteMeta } from "@/lib/content";
 
@@ -32,7 +32,7 @@ export default function Contact() {
             {t.contact.kicker}
           </p>
           <h2
-            className={`${display.className} mt-4 text-3xl font-medium leading-tight sm:text-4xl md:text-5xl`}
+            className={`${bodyFont.className} italic mt-4 text-3xl font-light leading-tight sm:text-4xl md:text-5xl`}
           >
             {t.contact.heading}
           </h2>

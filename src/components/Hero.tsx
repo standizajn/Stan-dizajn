@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { display } from "@/lib/fonts";
+import { body } from "@/lib/fonts";
 import { useLanguage } from "@/lib/LanguageProvider";
 
 export default function Hero() {
@@ -24,7 +24,7 @@ export default function Hero() {
 
       <div className="relative z-10 mx-auto w-full max-w-7xl px-6 pb-20 pt-40 md:px-10 md:pb-28">
         <h1
-          className={`${display.className} max-w-3xl text-4xl leading-[1.1] font-medium sm:text-5xl md:text-6xl`}
+          className={`${body.className} italic max-w-3xl text-4xl leading-[1.1] font-light sm:text-5xl md:text-6xl`}
         >
           {t.hero.title}
         </h1>
