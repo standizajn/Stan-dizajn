@@ -87,7 +87,7 @@ export const content: Record<Locale, SiteContent> = {
       cta: "Zatražite ponudu",
     },
     hero: {
-      title: "Vaš prostor — od ideje do ugradnje, na jednom mestu.",
+      title: "Vaš prostor - od ideje do ugradnje, na jednom mestu.",
       subtitle:
         "Dizajniramo, vizuelizujemo i izrađujemo nameštaj po meri — sve pod jednim krovom, bez trke između izvođača i dizajnera.",
       cta: "Zatražite ponudu",
@@ -231,7 +231,7 @@ export const content: Record<Locale, SiteContent> = {
       cta: "Request a quote",
     },
     hero: {
-      title: "Your space — from idea to installation, in one place.",
+      title: "Your space - from idea to installation, in one place.",
       subtitle:
         "We design, visualize and build custom furniture — all under one roof, without the back-and-forth between contractors and designers.",
       cta: "Request a quote",

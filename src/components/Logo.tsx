@@ -11,7 +11,7 @@ export default function Logo({ mode = "dark", className = "" }: LogoProps) {
   return (
     <svg
       viewBox="112 276 374 292"
-      className={`h-auto w-[110px] ${className}`}
+      className={`h-auto w-[82px] ${className}`}
       style={{ color: isLight ? "#ffffff" : "#141414" }}
       role="img"
       aria-label={siteMeta.brand}
