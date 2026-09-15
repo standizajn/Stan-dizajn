@@ -217,7 +217,7 @@ export const content: Record<Locale, SiteContent> = {
       },
     },
     footer: {
-      tagline: "Dizajn enterijera, nameštaj po meri, renovacije.",
+      tagline: "Dizajn enterijera, nameštaj po meri, 3D vizuelizacija.",
       rights: "Sva prava zadržana.",
     },
   },
@@ -361,7 +361,7 @@ export const content: Record<Locale, SiteContent> = {
       },
     },
     footer: {
-      tagline: "Interior design, custom furniture, renovations.",
+      tagline: "Interior design, custom furniture, 3D visualization.",
       rights: "All rights reserved.",
     },
   },

@@ -19,7 +19,7 @@ export default function AboutSlider() {
   }, []);
 
   return (
-    <div className="relative aspect-[4/5] w-full overflow-hidden rounded-sm bg-[#141414]">
+    <div className="relative aspect-[4/5] w-full overflow-hidden rounded-sm bg-[#fafaf8]">
       {slides.map((slide, i) => (
         <Image
           key={slide.src}
@@ -54,7 +54,7 @@ export default function AboutSlider() {
         </svg>
       </button>
 
-      <div className="absolute bottom-4 left-1/2 z-10 flex -translate-x-1/2 gap-2">
+      <div className="absolute bottom-4 left-1/2 z-10 flex -translate-x-1/2 gap-2 rounded-full bg-black/30 px-3 py-2">
         {slides.map((slide, i) => (
           <button
             key={slide.src}
