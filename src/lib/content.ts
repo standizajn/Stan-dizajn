@@ -172,7 +172,7 @@ export const content: Record<Locale, SiteContent> = {
     },
     about: {
       kicker: "O nama",
-      heading: "Jedan tim, jedna kontakt osoba, od ideje do useljenja.",
+      heading: "Sve u jednom timu. Dizajn, tehnička razrada, izrada nameštaja, ugradnja.",
       paragraphs: [
         "Naš tim čine arhitekta i dizajner enterijera, u saradnji sa proverenim izvođačima radova. Spajamo projektovanje, 3D vizuelizaciju i izradu nameštaja po meri u jedan proces, tako da imate jednu kontakt osobu od prve ideje do useljenja.",
         "Radionica naših izvođača se nalazi u Nišu, gde proizvodimo nameštaj po meri uz modernu opremu i pažljivu kontrolu kvaliteta svakog komada.",
@@ -316,7 +316,7 @@ export const content: Record<Locale, SiteContent> = {
     },
     about: {
       kicker: "About us",
-      heading: "One team, one point of contact, from idea to move-in.",
+      heading: "Everything under one team. Design, technical planning, furniture production, installation.",
       paragraphs: [
         "Our team consists of an architect and an interior designer, working with trusted contractors. We combine design, 3D visualization and custom furniture production into a single process, so you have one point of contact from the first idea to move-in.",
         "Our contractors' workshop is located in Niš, where we produce custom furniture using modern equipment and careful quality control of every piece.",
