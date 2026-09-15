@@ -174,7 +174,7 @@ export const content: Record<Locale, SiteContent> = {
       kicker: "O nama",
       heading: "Sve u jednom timu. Dizajn, tehnička razrada, izrada nameštaja, ugradnja.",
       paragraphs: [
-        "Naš tim čine arhitekta i dizajner enterijera, u saradnji sa proverenim izvođačima radova. Spajamo projektovanje, 3D vizuelizaciju i izradu nameštaja po meri u jedan proces, tako da imate jednu kontakt osobu od prve ideje do useljenja.",
+        "Naš tim čine arhitekta i dizajner enterijera, u saradnji sa proverenim izvođačima radova. Spajamo projektovanje, 3D vizuelizaciju i izradu nameštaja po meri u jedan proces, tako da imate kontakt sa jednom osobom od prve ideje do useljenja.",
         "Radionica naših izvođača se nalazi u Nišu, gde proizvodimo nameštaj po meri uz modernu opremu i pažljivu kontrolu kvaliteta svakog komada.",
       ],
     },
