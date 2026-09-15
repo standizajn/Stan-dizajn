@@ -1,8 +1,8 @@
 "use client";
 
+import Image from "next/image";
 import { display } from "@/lib/fonts";
 import { useLanguage } from "@/lib/LanguageProvider";
-import PlaceholderArt from "@/components/PlaceholderArt";
 
 export default function Hero() {
   const { t } = useLanguage();
@@ -12,9 +12,13 @@ export default function Hero() {
       id="top"
       className="relative flex min-h-screen items-end overflow-hidden bg-[#141414] text-white"
     >
-      <PlaceholderArt
-        seed={1}
-        className="absolute inset-0 h-full w-full text-white opacity-30"
+      <Image
+        src="/images/hero/living-room.jpg"
+        alt=""
+        fill
+        priority
+        sizes="100vw"
+        className="object-cover opacity-40"
       />
       <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/40 to-black" />
 
