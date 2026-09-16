@@ -32,5 +32,6 @@ export const lightItalic = localFont({
 export const heroSerif = Source_Serif_4({
   subsets: ["latin", "latin-ext"],
   weight: ["400", "500"],
+  style: ["normal", "italic"],
   variable: "--font-hero-serif",
 });
