@@ -85,13 +85,13 @@ export const content: Record<Locale, SiteContent> = {
       about: "O nama",
       portfolio: "Portfolio",
       contact: "Kontakt",
-      cta: "Zatražite ponudu",
+      cta: "Zakaži poziv",
     },
     hero: {
       title: "Vaš prostor - od ideje do ugradnje, na jednom mestu.",
       subtitle:
         "Dizajniramo, vizuelizujemo i izrađujemo nameštaj po meri — sve pod jednim krovom, bez trke između izvođača i dizajnera.",
-      cta: "Zatražite ponudu",
+      cta: "Zakaži poziv",
     },
     services: {
       kicker: "Usluge",
@@ -239,13 +239,13 @@ export const content: Record<Locale, SiteContent> = {
       about: "About",
       portfolio: "Portfolio",
       contact: "Contact",
-      cta: "Request a quote",
+      cta: "Schedule a call",
     },
     hero: {
       title: "Your space - from idea to installation, in one place.",
       subtitle:
         "We design, visualize and build custom furniture — all under one roof, without the back-and-forth between contractors and designers.",
-      cta: "Request a quote",
+      cta: "Schedule a call",
     },
     services: {
       kicker: "Services",
