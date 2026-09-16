@@ -213,6 +213,17 @@ export const content: Record<Locale, SiteContent> = {
             "/images/portfolio/klasicna-kuhinja-nis-02.jpg",
           ],
         },
+        {
+          title: "Kuhinja i trpezarija za stan u Beogradu",
+          category: "Kuhinja i trpezarija",
+          description: "Dizajn i nameštaj po meri ugradjen u porodičnom stanu.",
+          images: [
+            "/images/portfolio/beograd-kuhinja-01.jpg",
+            "/images/portfolio/beograd-kuhinja-02.jpg",
+            "/images/portfolio/beograd-kuhinja-03.jpg",
+            "/images/portfolio/beograd-kuhinja-04.jpg",
+          ],
+        },
       ],
     },
     contact: {
@@ -369,6 +380,17 @@ export const content: Record<Locale, SiteContent> = {
           images: [
             "/images/portfolio/klasicna-kuhinja-nis-01.jpg",
             "/images/portfolio/klasicna-kuhinja-nis-02.jpg",
+          ],
+        },
+        {
+          title: "Kitchen and dining room for an apartment in Belgrade",
+          category: "Kitchen & dining",
+          description: "Custom design and furniture built for this family apartment.",
+          images: [
+            "/images/portfolio/beograd-kuhinja-01.jpg",
+            "/images/portfolio/beograd-kuhinja-02.jpg",
+            "/images/portfolio/beograd-kuhinja-03.jpg",
+            "/images/portfolio/beograd-kuhinja-04.jpg",
           ],
         },
       ],
