@@ -2,7 +2,6 @@
 
 import { useEffect, useState } from "react";
 import { createPortal } from "react-dom";
-import Image from "next/image";
 import type { PortfolioProject } from "@/lib/content";
 
 interface PortfolioLightboxProps {
@@ -57,17 +56,13 @@ export default function PortfolioLightbox({ project, onClose }: PortfolioLightbo
         </button>
       </div>
 
-      <div className="relative mt-4 flex flex-1 items-center justify-center" onClick={(e) => e.stopPropagation()}>
-        <div className="relative h-full w-full">
-          <Image
-            src={images[index]}
-            alt={`${project.title} ${index + 1}`}
-            fill
-            sizes="100vw"
-            className="object-contain"
-            priority
-          />
-        </div>
+      <div className="relative mt-4 flex flex-1 items-center justify-center overflow-hidden" onClick={(e) => e.stopPropagation()}>
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src={images[index]}
+          alt={`${project.title} ${index + 1}`}
+          className="max-h-full max-w-full object-contain"
+        />
 
         {images.length > 1 && (
           <>
