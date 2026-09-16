@@ -44,7 +44,7 @@ export default function Process() {
               />
               <div className="relative z-10">
                 <span
-                  className={`${display.className} text-4xl font-medium text-white/40`}
+                  className={`${display.className} text-4xl font-medium text-white/75`}
                 >
                   {step.number}
                 </span>
