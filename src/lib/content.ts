@@ -200,8 +200,8 @@ export const content: Record<Locale, SiteContent> = {
           category: "Stambeni enterijer",
           description: "Kompletan enterijer dizajn dnevne i spavaće sobe, u toplom, prirodnom ambijentu.",
           images: [
-            "/images/portfolio/brazil-01-dnevna-soba.jpg",
-            "/images/portfolio/brazil-02-spavaca-soba.jpg",
+            "/images/portfolio/brazil-01-dnevna-soba.webp",
+            "/images/portfolio/brazil-02-spavaca-soba.webp",
           ],
         },
         {
@@ -209,8 +209,8 @@ export const content: Record<Locale, SiteContent> = {
           category: "Kuhinja i trpezarija",
           description: "Dizajn kuhinje u klasičnom stilu, sa elementima rađenim po meri, kao i stolom rađenim po meri.",
           images: [
-            "/images/portfolio/klasicna-kuhinja-nis-01.jpg",
-            "/images/portfolio/klasicna-kuhinja-nis-02.jpg",
+            "/images/portfolio/klasicna-kuhinja-nis-01.webp",
+            "/images/portfolio/klasicna-kuhinja-nis-02.webp",
           ],
         },
         {
@@ -218,10 +218,10 @@ export const content: Record<Locale, SiteContent> = {
           category: "Kuhinja i trpezarija",
           description: "Dizajn i nameštaj po meri ugradjen u porodičnom stanu.",
           images: [
-            "/images/portfolio/beograd-kuhinja-01.jpg",
-            "/images/portfolio/beograd-kuhinja-02.jpg",
-            "/images/portfolio/beograd-kuhinja-03.jpg",
-            "/images/portfolio/beograd-kuhinja-04.jpg",
+            "/images/portfolio/beograd-kuhinja-01.webp",
+            "/images/portfolio/beograd-kuhinja-02.webp",
+            "/images/portfolio/beograd-kuhinja-03.webp",
+            "/images/portfolio/beograd-kuhinja-04.webp",
           ],
         },
       ],
@@ -369,8 +369,8 @@ export const content: Record<Locale, SiteContent> = {
           category: "Residential interior",
           description: "Full interior design for the living room and bedroom, in a warm, natural setting.",
           images: [
-            "/images/portfolio/brazil-01-dnevna-soba.jpg",
-            "/images/portfolio/brazil-02-spavaca-soba.jpg",
+            "/images/portfolio/brazil-01-dnevna-soba.webp",
+            "/images/portfolio/brazil-02-spavaca-soba.webp",
           ],
         },
         {
@@ -378,8 +378,8 @@ export const content: Record<Locale, SiteContent> = {
           category: "Kitchen & dining",
           description: "Classic-style kitchen design, with custom-made elements as well as a custom-made table.",
           images: [
-            "/images/portfolio/klasicna-kuhinja-nis-01.jpg",
-            "/images/portfolio/klasicna-kuhinja-nis-02.jpg",
+            "/images/portfolio/klasicna-kuhinja-nis-01.webp",
+            "/images/portfolio/klasicna-kuhinja-nis-02.webp",
           ],
         },
         {
@@ -387,10 +387,10 @@ export const content: Record<Locale, SiteContent> = {
           category: "Kitchen & dining",
           description: "Custom design and furniture built for this family apartment.",
           images: [
-            "/images/portfolio/beograd-kuhinja-01.jpg",
-            "/images/portfolio/beograd-kuhinja-02.jpg",
-            "/images/portfolio/beograd-kuhinja-03.jpg",
-            "/images/portfolio/beograd-kuhinja-04.jpg",
+            "/images/portfolio/beograd-kuhinja-01.webp",
+            "/images/portfolio/beograd-kuhinja-02.webp",
+            "/images/portfolio/beograd-kuhinja-03.webp",
+            "/images/portfolio/beograd-kuhinja-04.webp",
           ],
         },
       ],
@@ -421,4 +421,12 @@ export const siteMeta = {
   brand: "STAN.design",
   phone: "+381 61 6079337",
   email: "stan.enterijer.dizajn@gmail.com",
+  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://stan-dizajn.vercel.app",
+  city: "Niš",
+  country: "RS",
+  founder: "Milutin Stanković",
+  description: {
+    sr: "Dizajniramo, vizuelizujemo i izrađujemo nameštaj po meri — sve pod jednim krovom. Sedište u Nišu, radimo širom Srbije.",
+    en: "We design, visualize and build custom furniture — all under one roof. Based in Niš, working across Serbia.",
+  },
 };
