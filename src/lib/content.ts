@@ -197,9 +197,13 @@ export const content: Record<Locale, SiteContent> = {
           ],
         },
         {
-          title: "Kuhinja sa ostrvom",
-          category: "Nameštaj po meri",
-          description: "Kuhinja po meri sa terraco radnom površinom.",
+          title: "Enterijer dizajn za stan u Brazilu",
+          category: "Stambeni enterijer",
+          description: "Kompletan enterijer dizajn dnevne i spavaće sobe, u toplom, prirodnom ambijentu.",
+          images: [
+            "/images/portfolio/brazil-01-dnevna-soba.jpg",
+            "/images/portfolio/brazil-02-spavaca-soba.jpg",
+          ],
         },
         {
           title: "Porodična kuća, Niš",
@@ -347,9 +351,13 @@ export const content: Record<Locale, SiteContent> = {
           ],
         },
         {
-          title: "Kitchen with island",
-          category: "Custom furniture",
-          description: "Custom kitchen with a terrazzo countertop.",
+          title: "Interior design for an apartment in Brazil",
+          category: "Residential interior",
+          description: "Full interior design for the living room and bedroom, in a warm, natural setting.",
+          images: [
+            "/images/portfolio/brazil-01-dnevna-soba.jpg",
+            "/images/portfolio/brazil-02-spavaca-soba.jpg",
+          ],
         },
         {
           title: "Family house, Niš",
