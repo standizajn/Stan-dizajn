@@ -182,8 +182,7 @@ export const content: Record<Locale, SiteContent> = {
     portfolio: {
       kicker: "Portfolio",
       heading: "Izabrani projekti",
-      comingSoon:
-        "Klikni na projekat za više fotografija. Ostali radovi stižu uskoro.",
+      comingSoon: "Klikni na projekat za više fotografija.",
       projects: [
         {
           title: "Stan u Nišu - trpezarija i kuhinja",
@@ -341,7 +340,7 @@ export const content: Record<Locale, SiteContent> = {
       kicker: "Portfolio",
       heading: "Selected projects",
       comingSoon:
-        "Click a project to see more photos. More projects are coming soon.",
+        "Click a project to see more photos.",
       projects: [
         {
           title: "Apartment in Niš - dining room and kitchen",
