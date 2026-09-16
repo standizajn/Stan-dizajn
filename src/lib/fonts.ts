@@ -1,4 +1,4 @@
-import { Poppins } from "next/font/google";
+import { Poppins, Source_Serif_4 } from "next/font/google";
 import localFont from "next/font/local";
 
 export const poppins = Poppins({
@@ -27,4 +27,10 @@ export const lightItalic = localFont({
   style: "italic",
   variable: "--font-light-italic",
   display: "swap",
+});
+
+export const heroSerif = Source_Serif_4({
+  subsets: ["latin", "latin-ext"],
+  weight: ["400", "500"],
+  variable: "--font-hero-serif",
 });
