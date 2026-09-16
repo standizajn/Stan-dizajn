@@ -15,7 +15,7 @@ export default function About() {
             {t.about.kicker}
           </p>
           <h2
-            className={`${display.className} mt-4 text-3xl font-medium leading-tight text-[#141414] sm:text-4xl md:text-5xl`}
+            className={`${display.className} mt-4 whitespace-pre-line text-3xl font-medium leading-tight text-[#141414] sm:text-4xl md:text-5xl`}
           >
             {t.about.heading}
           </h2>
