@@ -28,7 +28,7 @@ export default function Hero() {
         >
           {t.hero.title}
         </h1>
-        <p className="mt-6 max-w-xl text-base font-light text-white/80 md:text-lg">
+        <p className="mt-6 max-w-xl text-base text-white/80 md:text-lg">
           {t.hero.subtitle}
         </p>
         <a
