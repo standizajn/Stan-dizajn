@@ -35,11 +35,11 @@ export default function PortfolioLightbox({ project, onClose }: PortfolioLightbo
   if (images.length === 0 || !mounted) return null;
 
   return createPortal(
-    <div
-      className="fixed inset-0 z-[100] flex flex-col bg-black/95 px-4 py-6 md:px-10 md:py-10"
-      onClick={onClose}
-    >
-      <div className="flex items-center justify-between text-white" onClick={(e) => e.stopPropagation()}>
+    <div className="fixed inset-0 z-[100] bg-black/95" onClick={onClose}>
+      <div
+        className="absolute inset-x-0 top-0 z-10 flex items-center justify-between px-4 py-6 text-white md:px-10 md:py-10"
+        onClick={(e) => e.stopPropagation()}
+      >
         <div>
           <p className="text-xs font-medium tracking-[0.15em] text-white/50 uppercase">{project.category}</p>
           <p className="text-sm font-medium">{project.title}</p>
@@ -56,56 +56,67 @@ export default function PortfolioLightbox({ project, onClose }: PortfolioLightbo
         </button>
       </div>
 
-      <div className="relative mt-4 flex flex-1 items-center justify-center overflow-hidden" onClick={(e) => e.stopPropagation()}>
+      <div
+        className="absolute inset-0 flex items-center justify-center px-4 py-24 md:px-16 md:py-28"
+        onClick={(e) => e.stopPropagation()}
+      >
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src={images[index]}
           alt={`${project.title} ${index + 1}`}
-          className="max-h-full max-w-full object-contain"
+          className="block"
+          style={{ maxWidth: "100%", maxHeight: "100%", width: "auto", height: "auto", objectFit: "contain" }}
         />
-
-        {images.length > 1 && (
-          <>
-            <button
-              type="button"
-              aria-label="Prethodna slika"
-              onClick={() => setIndex((i) => (i - 1 + images.length) % images.length)}
-              className="absolute left-0 top-1/2 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-white/10 text-white transition-colors hover:bg-white/20 md:left-4"
-            >
-              <svg width="18" height="18" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-                <path d="M10 3L5 8l5 5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-              </svg>
-            </button>
-            <button
-              type="button"
-              aria-label="Sledeća slika"
-              onClick={() => setIndex((i) => (i + 1) % images.length)}
-              className="absolute right-0 top-1/2 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-white/10 text-white transition-colors hover:bg-white/20 md:right-4"
-            >
-              <svg width="18" height="18" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-                <path d="M6 3l5 5-5 5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-              </svg>
-            </button>
-          </>
-        )}
       </div>
 
       {images.length > 1 && (
-        <div className="mt-4 flex justify-center gap-2" onClick={(e) => e.stopPropagation()}>
-          {images.map((src, i) => (
-            <button
-              key={src}
-              type="button"
-              aria-label={`Prikaži sliku ${i + 1}`}
-              onClick={() => setIndex(i)}
-              className="h-1.5 rounded-full transition-all"
-              style={{
-                width: i === index ? "20px" : "6px",
-                backgroundColor: i === index ? "#ffffff" : "rgba(255,255,255,0.4)",
-              }}
-            />
-          ))}
-        </div>
+        <>
+          <button
+            type="button"
+            aria-label="Prethodna slika"
+            onClick={(e) => {
+              e.stopPropagation();
+              setIndex((i) => (i - 1 + images.length) % images.length);
+            }}
+            className="absolute left-2 top-1/2 z-10 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-white/10 text-white transition-colors hover:bg-white/20 md:left-4"
+          >
+            <svg width="18" height="18" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+              <path d="M10 3L5 8l5 5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+            </svg>
+          </button>
+          <button
+            type="button"
+            aria-label="Sledeća slika"
+            onClick={(e) => {
+              e.stopPropagation();
+              setIndex((i) => (i + 1) % images.length);
+            }}
+            className="absolute right-2 top-1/2 z-10 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-white/10 text-white transition-colors hover:bg-white/20 md:right-4"
+          >
+            <svg width="18" height="18" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+              <path d="M6 3l5 5-5 5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+            </svg>
+          </button>
+
+          <div
+            className="absolute inset-x-0 bottom-0 z-10 flex justify-center gap-2 px-4 py-6 md:py-10"
+            onClick={(e) => e.stopPropagation()}
+          >
+            {images.map((src, i) => (
+              <button
+                key={src}
+                type="button"
+                aria-label={`Prikaži sliku ${i + 1}`}
+                onClick={() => setIndex(i)}
+                className="h-1.5 rounded-full transition-all"
+                style={{
+                  width: i === index ? "20px" : "6px",
+                  backgroundColor: i === index ? "#ffffff" : "rgba(255,255,255,0.4)",
+                }}
+              />
+            ))}
+          </div>
+        </>
       )}
     </div>,
     document.body
