@@ -206,9 +206,13 @@ export const content: Record<Locale, SiteContent> = {
           ],
         },
         {
-          title: "Porodična kuća, Niš",
-          category: "Kompletan enterijer",
-          description: "Projektovanje i realizacija enterijera od nule.",
+          title: "Klasična kuhinja za kuću u Nišu",
+          category: "Kuhinja i trpezarija",
+          description: "Dizajn kuhinje u klasičnom stilu, sa elementima rađenim po meri, kao i stolom rađenim po meri.",
+          images: [
+            "/images/portfolio/klasicna-kuhinja-nis-01.jpg",
+            "/images/portfolio/klasicna-kuhinja-nis-02.jpg",
+          ],
         },
       ],
     },
@@ -360,9 +364,13 @@ export const content: Record<Locale, SiteContent> = {
           ],
         },
         {
-          title: "Family house, Niš",
-          category: "Full interior",
-          description: "Interior design and execution from scratch.",
+          title: "Classic kitchen for a house in Niš",
+          category: "Kitchen & dining",
+          description: "Classic-style kitchen design, with custom-made elements as well as a custom-made table.",
+          images: [
+            "/images/portfolio/klasicna-kuhinja-nis-01.jpg",
+            "/images/portfolio/klasicna-kuhinja-nis-02.jpg",
+          ],
         },
       ],
     },
