@@ -18,10 +18,13 @@ export default function Services() {
           {t.services.heading}
         </h2>
 
-        <div className="mt-16 grid grid-cols-1 gap-x-10 gap-y-16 md:grid-cols-3">
+        <div className="mt-16 grid grid-cols-1 gap-y-16 md:grid-cols-3 md:divide-x md:divide-black/10">
           {t.services.items.map((service, i) => (
-            <div key={service.title} className="flex flex-col">
-              <span className="text-sm font-medium text-[#8a8378]">
+            <div
+              key={service.title}
+              className={`flex flex-col ${i === 0 ? "md:pr-10" : "md:px-10"}`}
+            >
+              <span className="text-sm font-medium text-[#b5673d]">
                 {String(i + 1).padStart(2, "0")}
               </span>
               <h3
