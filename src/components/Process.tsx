@@ -34,14 +34,14 @@ export default function Process() {
               key={step.number}
               className="relative flex min-h-[280px] flex-col justify-end overflow-hidden rounded-sm p-8"
             >
+              <div className="absolute inset-0 bg-gradient-to-b from-[#0b0b0b] to-[#2b2b2b]" />
               <Image
                 src={stepImages[i]}
                 alt={step.title}
                 fill
                 sizes="(min-width: 768px) 50vw, 100vw"
-                className="object-cover"
+                className="object-cover opacity-35"
               />
-              <div className="absolute inset-0 bg-gradient-to-b from-black/90 to-[#2a2a28]/70" />
               <div className="relative z-10">
                 <span
                   className={`${display.className} text-4xl font-medium text-white/40`}
