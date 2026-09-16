@@ -18,6 +18,7 @@ export interface PortfolioProject {
   title: string;
   category: string;
   description: string;
+  images?: string[];
 }
 
 export interface SiteContent {
@@ -182,12 +183,18 @@ export const content: Record<Locale, SiteContent> = {
       kicker: "Portfolio",
       heading: "Izabrani projekti",
       comingSoon:
-        "Fotografije i renderi izvedenih projekata stižu uskoro. Ovde će se nalaziti galerija naših radova, grupisana po projektima.",
+        "Klikni na projekat za više fotografija. Ostali radovi stižu uskoro.",
       projects: [
         {
-          title: "Stan na Pantelejskom bulevaru",
-          category: "Stambeni enterijer",
-          description: "Dizajn i izrada nameštaja po meri za dvosoban stan.",
+          title: "Stan u Nišu - trpezarija i kuhinja",
+          category: "Kuhinja i trpezarija",
+          description: "Kuhinja i trpezarija po meri, projektovane i izrađene za ovaj stan.",
+          images: [
+            "/images/portfolio/stan-nis-01-kuhinja-trpezarija.webp",
+            "/images/portfolio/stan-nis-02-kuhinja.webp",
+            "/images/portfolio/stan-nis-03-kuhinja-frontalno.webp",
+            "/images/portfolio/stan-nis-04-detalj-fioke.webp",
+          ],
         },
         {
           title: "Kuhinja sa ostrvom",
@@ -326,12 +333,18 @@ export const content: Record<Locale, SiteContent> = {
       kicker: "Portfolio",
       heading: "Selected projects",
       comingSoon:
-        "Photos and renders of completed projects are coming soon. This is where the gallery of our work, grouped by project, will live.",
+        "Click a project to see more photos. More projects are coming soon.",
       projects: [
         {
-          title: "Apartment on Pantelejski Boulevard",
-          category: "Residential interior",
-          description: "Design and custom furniture for a two-room apartment.",
+          title: "Apartment in Niš - dining room and kitchen",
+          category: "Kitchen & dining",
+          description: "Custom kitchen and dining furniture, designed and built for this apartment.",
+          images: [
+            "/images/portfolio/stan-nis-01-kuhinja-trpezarija.webp",
+            "/images/portfolio/stan-nis-02-kuhinja.webp",
+            "/images/portfolio/stan-nis-03-kuhinja-frontalno.webp",
+            "/images/portfolio/stan-nis-04-detalj-fioke.webp",
+          ],
         },
         {
           title: "Kitchen with island",
