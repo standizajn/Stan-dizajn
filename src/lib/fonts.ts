@@ -8,14 +8,14 @@ export const poppins = Poppins({
 });
 
 export const display = localFont({
-  src: "../fonts/swiss-721-extended-roman.ttf",
+  src: "../fonts/helvetica-regular.ttf",
   weight: "400",
   variable: "--font-display",
   display: "swap",
 });
 
 export const body = localFont({
-  src: "../fonts/swiss-721-extended-light.ttf",
+  src: "../fonts/helvetica-light.ttf",
   weight: "300",
   variable: "--font-body",
   display: "swap",
