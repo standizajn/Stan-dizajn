@@ -189,10 +189,10 @@ export const content: Record<Locale, SiteContent> = {
           category: "Kuhinja i trpezarija",
           description: "Kuhinja i trpezarija po meri, projektovane i izrađene za ovaj stan.",
           images: [
-            "/images/portfolio/stan-nis-01-kuhinja-trpezarija.webp",
-            "/images/portfolio/stan-nis-02-kuhinja.webp",
-            "/images/portfolio/stan-nis-03-kuhinja-frontalno.webp",
-            "/images/portfolio/stan-nis-04-detalj-fioke.webp",
+            "https://zeliak7tezbysyo8.public.blob.vercel-storage.com/images/portfolio/stan-nis-01-kuhinja-trpezarija.webp",
+            "https://zeliak7tezbysyo8.public.blob.vercel-storage.com/images/portfolio/stan-nis-02-kuhinja.webp",
+            "https://zeliak7tezbysyo8.public.blob.vercel-storage.com/images/portfolio/stan-nis-03-kuhinja-frontalno.webp",
+            "https://zeliak7tezbysyo8.public.blob.vercel-storage.com/images/portfolio/stan-nis-04-detalj-fioke.webp",
           ],
         },
         {
@@ -200,8 +200,8 @@ export const content: Record<Locale, SiteContent> = {
           category: "Stambeni enterijer",
           description: "Kompletan enterijer dizajn dnevne i spavaće sobe, u toplom, prirodnom ambijentu.",
           images: [
-            "/images/portfolio/brazil-01-dnevna-soba.webp",
-            "/images/portfolio/brazil-02-spavaca-soba.webp",
+            "https://zeliak7tezbysyo8.public.blob.vercel-storage.com/images/portfolio/brazil-01-dnevna-soba.webp",
+            "https://zeliak7tezbysyo8.public.blob.vercel-storage.com/images/portfolio/brazil-02-spavaca-soba.webp",
           ],
         },
         {
@@ -209,8 +209,8 @@ export const content: Record<Locale, SiteContent> = {
           category: "Kuhinja i trpezarija",
           description: "Dizajn kuhinje u klasičnom stilu, sa elementima rađenim po meri, kao i stolom rađenim po meri.",
           images: [
-            "/images/portfolio/klasicna-kuhinja-nis-01.webp",
-            "/images/portfolio/klasicna-kuhinja-nis-02.webp",
+            "https://zeliak7tezbysyo8.public.blob.vercel-storage.com/images/portfolio/klasicna-kuhinja-nis-01.webp",
+            "https://zeliak7tezbysyo8.public.blob.vercel-storage.com/images/portfolio/klasicna-kuhinja-nis-02.webp",
           ],
         },
         {
@@ -218,10 +218,10 @@ export const content: Record<Locale, SiteContent> = {
           category: "Kuhinja i trpezarija",
           description: "Dizajn i nameštaj po meri ugradjen u porodičnom stanu.",
           images: [
-            "/images/portfolio/beograd-kuhinja-01.webp",
-            "/images/portfolio/beograd-kuhinja-02.webp",
-            "/images/portfolio/beograd-kuhinja-03.webp",
-            "/images/portfolio/beograd-kuhinja-04.webp",
+            "https://zeliak7tezbysyo8.public.blob.vercel-storage.com/images/portfolio/beograd-kuhinja-01.webp",
+            "https://zeliak7tezbysyo8.public.blob.vercel-storage.com/images/portfolio/beograd-kuhinja-02.webp",
+            "https://zeliak7tezbysyo8.public.blob.vercel-storage.com/images/portfolio/beograd-kuhinja-03.webp",
+            "https://zeliak7tezbysyo8.public.blob.vercel-storage.com/images/portfolio/beograd-kuhinja-04.webp",
           ],
         },
         {
@@ -369,10 +369,10 @@ export const content: Record<Locale, SiteContent> = {
           category: "Kitchen & dining",
           description: "Custom kitchen and dining furniture, designed and built for this apartment.",
           images: [
-            "/images/portfolio/stan-nis-01-kuhinja-trpezarija.webp",
-            "/images/portfolio/stan-nis-02-kuhinja.webp",
-            "/images/portfolio/stan-nis-03-kuhinja-frontalno.webp",
-            "/images/portfolio/stan-nis-04-detalj-fioke.webp",
+            "https://zeliak7tezbysyo8.public.blob.vercel-storage.com/images/portfolio/stan-nis-01-kuhinja-trpezarija.webp",
+            "https://zeliak7tezbysyo8.public.blob.vercel-storage.com/images/portfolio/stan-nis-02-kuhinja.webp",
+            "https://zeliak7tezbysyo8.public.blob.vercel-storage.com/images/portfolio/stan-nis-03-kuhinja-frontalno.webp",
+            "https://zeliak7tezbysyo8.public.blob.vercel-storage.com/images/portfolio/stan-nis-04-detalj-fioke.webp",
           ],
         },
         {
@@ -380,8 +380,8 @@ export const content: Record<Locale, SiteContent> = {
           category: "Residential interior",
           description: "Full interior design for the living room and bedroom, in a warm, natural setting.",
           images: [
-            "/images/portfolio/brazil-01-dnevna-soba.webp",
-            "/images/portfolio/brazil-02-spavaca-soba.webp",
+            "https://zeliak7tezbysyo8.public.blob.vercel-storage.com/images/portfolio/brazil-01-dnevna-soba.webp",
+            "https://zeliak7tezbysyo8.public.blob.vercel-storage.com/images/portfolio/brazil-02-spavaca-soba.webp",
           ],
         },
         {
@@ -389,8 +389,8 @@ export const content: Record<Locale, SiteContent> = {
           category: "Kitchen & dining",
           description: "Classic-style kitchen design, with custom-made elements as well as a custom-made table.",
           images: [
-            "/images/portfolio/klasicna-kuhinja-nis-01.webp",
-            "/images/portfolio/klasicna-kuhinja-nis-02.webp",
+            "https://zeliak7tezbysyo8.public.blob.vercel-storage.com/images/portfolio/klasicna-kuhinja-nis-01.webp",
+            "https://zeliak7tezbysyo8.public.blob.vercel-storage.com/images/portfolio/klasicna-kuhinja-nis-02.webp",
           ],
         },
         {
@@ -398,10 +398,10 @@ export const content: Record<Locale, SiteContent> = {
           category: "Kitchen & dining",
           description: "Custom design and furniture built for this family apartment.",
           images: [
-            "/images/portfolio/beograd-kuhinja-01.webp",
-            "/images/portfolio/beograd-kuhinja-02.webp",
-            "/images/portfolio/beograd-kuhinja-03.webp",
-            "/images/portfolio/beograd-kuhinja-04.webp",
+            "https://zeliak7tezbysyo8.public.blob.vercel-storage.com/images/portfolio/beograd-kuhinja-01.webp",
+            "https://zeliak7tezbysyo8.public.blob.vercel-storage.com/images/portfolio/beograd-kuhinja-02.webp",
+            "https://zeliak7tezbysyo8.public.blob.vercel-storage.com/images/portfolio/beograd-kuhinja-03.webp",
+            "https://zeliak7tezbysyo8.public.blob.vercel-storage.com/images/portfolio/beograd-kuhinja-04.webp",
           ],
         },
         {

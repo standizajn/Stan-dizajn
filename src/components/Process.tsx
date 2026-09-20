@@ -5,12 +5,12 @@ import { display } from "@/lib/fonts";
 import { useLanguage } from "@/lib/LanguageProvider";
 
 const stepImages = [
-  "/images/process/step-01-konsultacije.webp",
-  "/images/process/step-02-vizuelizacija.webp",
-  "/images/process/step-03-ponuda.webp",
-  "/images/process/step-04-mere.webp",
-  "/images/process/step-05-proizvodnja.webp",
-  "/images/process/step-06-montaza.webp",
+  "https://zeliak7tezbysyo8.public.blob.vercel-storage.com/images/process/step-01-konsultacije.webp",
+  "https://zeliak7tezbysyo8.public.blob.vercel-storage.com/images/process/step-02-vizuelizacija.webp",
+  "https://zeliak7tezbysyo8.public.blob.vercel-storage.com/images/process/step-03-ponuda.webp",
+  "https://zeliak7tezbysyo8.public.blob.vercel-storage.com/images/process/step-04-mere.webp",
+  "https://zeliak7tezbysyo8.public.blob.vercel-storage.com/images/process/step-05-proizvodnja.webp",
+  "https://zeliak7tezbysyo8.public.blob.vercel-storage.com/images/process/step-06-montaza.webp",
 ];
 
 export default function Process() {

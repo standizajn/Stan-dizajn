@@ -4,8 +4,8 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 
 const slides = [
-  { src: "/images/about/milutin-stankovic.webp", alt: "Milutin Stanković, enterijer dizajner i inženjer arhitekture", fit: "contain" as const },
-  { src: "/images/about/proizvodnja-tim.webp", alt: "Topić Enterijeri, ručno pravljen nameštaj po meri", fit: "contain" as const },
+  { src: "https://zeliak7tezbysyo8.public.blob.vercel-storage.com/images/about/milutin-stankovic.webp", alt: "Milutin Stanković, enterijer dizajner i inženjer arhitekture", fit: "contain" as const },
+  { src: "https://zeliak7tezbysyo8.public.blob.vercel-storage.com/images/about/proizvodnja-tim.webp", alt: "Topić Enterijeri, ručno pravljen nameštaj po meri", fit: "contain" as const },
 ];
 
 export default function AboutSlider() {

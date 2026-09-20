@@ -13,7 +13,7 @@ export default function Hero() {
       className="relative flex min-h-screen items-end overflow-hidden bg-[#141414] text-white"
     >
       <Image
-        src="/images/hero/living-room.webp"
+        src="https://zeliak7tezbysyo8.public.blob.vercel-storage.com/images/hero/living-room.webp"
         alt=""
         fill
         priority
