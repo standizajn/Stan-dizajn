@@ -224,6 +224,17 @@ export const content: Record<Locale, SiteContent> = {
             "/images/portfolio/beograd-kuhinja-04.webp",
           ],
         },
+        {
+          title: "Kuhinja sa ostrvom za par u Nišu",
+          category: "Kuhinja i trpezarija",
+          description: "Dizajn i nameštaj po meri u vintage stilu.",
+          images: [
+            "/images/portfolio/nis-ostrvo-kuhinja-01.webp",
+            "/images/portfolio/nis-ostrvo-kuhinja-02.webp",
+            "/images/portfolio/nis-ostrvo-kuhinja-03.webp",
+            "/images/portfolio/nis-ostrvo-kuhinja-04.webp",
+          ],
+        },
       ],
     },
     contact: {
@@ -391,6 +402,17 @@ export const content: Record<Locale, SiteContent> = {
             "/images/portfolio/beograd-kuhinja-02.webp",
             "/images/portfolio/beograd-kuhinja-03.webp",
             "/images/portfolio/beograd-kuhinja-04.webp",
+          ],
+        },
+        {
+          title: "Kitchen with island for a couple in Niš",
+          category: "Kitchen & dining",
+          description: "Custom design and furniture in a vintage style.",
+          images: [
+            "/images/portfolio/nis-ostrvo-kuhinja-01.webp",
+            "/images/portfolio/nis-ostrvo-kuhinja-02.webp",
+            "/images/portfolio/nis-ostrvo-kuhinja-03.webp",
+            "/images/portfolio/nis-ostrvo-kuhinja-04.webp",
           ],
         },
       ],
