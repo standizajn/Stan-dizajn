@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { poppins, display, body } from "@/lib/fonts";
-import { LanguageProvider } from "@/lib/LanguageProvider";
 import { siteMeta } from "@/lib/content";
 import "./globals.css";
 
@@ -14,19 +13,14 @@ export const metadata: Metadata = {
     template: `%s — ${siteMeta.brand}`,
   },
   description,
-  keywords: [
-    "dizajn enterijera",
-    "enterijer dizajner Niš",
-    "nameštaj po meri",
-    "kuhinje po meri",
-    "3D vizuelizacija enterijera",
-    "renoviranje stana",
-    "interior design Serbia",
-  ],
   authors: [{ name: siteMeta.founder }],
   creator: siteMeta.founder,
   alternates: {
     canonical: siteMeta.url,
+    languages: {
+      sr: siteMeta.url,
+      en: `${siteMeta.url}/en`,
+    },
   },
   openGraph: {
     type: "website",
@@ -98,7 +92,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
             __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c"),
           }}
         />
-        <LanguageProvider>{children}</LanguageProvider>
+        {children}
       </body>
     </html>
   );

@@ -443,7 +443,7 @@ export const siteMeta = {
   brand: "STAN.design",
   phone: "+381 61 6079337",
   email: "stan.enterijer.dizajn@gmail.com",
-  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://stan-dizajn.vercel.app",
+  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://standizajn.rs",
   city: "Niš",
   country: "RS",
   founder: "Milutin Stanković",
