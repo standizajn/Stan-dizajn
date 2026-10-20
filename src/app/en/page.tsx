@@ -26,6 +26,7 @@ export const metadata: Metadata = {
     description,
     locale: "en_US",
     alternateLocale: ["sr_RS"],
+    images: [`${siteMeta.url}/opengraph-image`],
   },
   twitter: {
     card: "summary_large_image",
