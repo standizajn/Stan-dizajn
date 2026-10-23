@@ -3,8 +3,9 @@ import { poppins, display, body } from "@/lib/fonts";
 import { siteMeta } from "@/lib/content";
 import "./globals.css";
 
-const title = `${siteMeta.brand} — Dizajn enterijera & nameštaj po meri`;
-const description = siteMeta.description.sr;
+const title = "Dizajn enterijera i nameštaj po meri Niš | STAN.design";
+const description =
+  "Projekat, 3D prikaz i nameštaj po meri iz radionice u Nišu. Jedna osoba od ideje do useljenja. Prvi razgovor je besplatan.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteMeta.url),
