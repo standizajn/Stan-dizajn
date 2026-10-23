@@ -5,7 +5,7 @@ import { display } from "@/lib/fonts";
 import { useLanguage } from "@/lib/LanguageProvider";
 
 export default function Hero() {
-  const { t } = useLanguage();
+  const { t, locale } = useLanguage();
 
   return (
     <section
@@ -14,7 +14,11 @@ export default function Hero() {
     >
       <Image
         src="https://zeliak7tezbysyo8.public.blob.vercel-storage.com/images/hero/living-room.webp"
-        alt=""
+        alt={
+          locale === "sr"
+            ? "Dnevna soba po projektu STAN design, Niš"
+            : "Living room designed by STAN design, Niš"
+        }
         fill
         priority
         sizes="100vw"
