@@ -185,7 +185,7 @@ export const content: Record<Locale, SiteContent> = {
       comingSoon: "Klikni na projekat za više fotografija.",
       projects: [
         {
-          title: "Stan u Nišu - trpezarija i kuhinja",
+          title: "Stan u Beogradu - trpezarija i kuhinja",
           category: "Kuhinja i trpezarija",
           description: "Kuhinja i trpezarija po meri, projektovane i izrađene za ovaj stan.",
           images: [
@@ -365,7 +365,7 @@ export const content: Record<Locale, SiteContent> = {
         "Click a project to see more photos.",
       projects: [
         {
-          title: "Apartment in Niš - dining room and kitchen",
+          title: "Apartment in Belgrade - dining room and kitchen",
           category: "Kitchen & dining",
           description: "Custom kitchen and dining furniture, designed and built for this apartment.",
           images: [
