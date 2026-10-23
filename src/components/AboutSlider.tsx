@@ -1,73 +1,30 @@
 "use client";
 
-import { useEffect, useState } from "react";
 import Image from "next/image";
-
-const slides = [
-  { src: "https://zeliak7tezbysyo8.public.blob.vercel-storage.com/images/about/milutin-stankovic.webp", alt: "Milutin Stanković, enterijer dizajner i inženjer arhitekture", fit: "contain" as const },
-  { src: "https://zeliak7tezbysyo8.public.blob.vercel-storage.com/images/about/proizvodnja-tim.webp", alt: "Topić Enterijeri, ručno pravljen nameštaj po meri", fit: "contain" as const },
-];
+import { useLanguage } from "@/lib/LanguageProvider";
 
 export default function AboutSlider() {
-  const [index, setIndex] = useState(0);
-
-  useEffect(() => {
-    const id = setInterval(() => {
-      setIndex((i) => (i + 1) % slides.length);
-    }, 5000);
-    return () => clearInterval(id);
-  }, []);
+  const { locale } = useLanguage();
 
   return (
-    <div className="relative aspect-[4/5] w-full overflow-hidden rounded-sm bg-[#fafaf8]">
-      {slides.map((slide, i) => (
-        <Image
-          key={slide.src}
-          src={slide.src}
-          alt={slide.alt}
-          fill
-          sizes="(min-width: 768px) 50vw, 100vw"
-          className={`transition-opacity duration-700 ${slide.fit === "contain" ? "object-contain" : "object-cover"}`}
-          style={{ opacity: i === index ? 1 : 0 }}
-          priority={i === 0}
-        />
-      ))}
-
-      <button
-        type="button"
-        aria-label="Prethodna slika"
-        onClick={() => setIndex((i) => (i - 1 + slides.length) % slides.length)}
-        className="absolute left-3 top-1/2 z-10 flex h-8 w-8 -translate-y-1/2 items-center justify-center rounded-full bg-black/30 text-white transition-colors hover:bg-black/50"
-      >
-        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-          <path d="M10 3L5 8l5 5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-        </svg>
-      </button>
-      <button
-        type="button"
-        aria-label="Sledeća slika"
-        onClick={() => setIndex((i) => (i + 1) % slides.length)}
-        className="absolute right-3 top-1/2 z-10 flex h-8 w-8 -translate-y-1/2 items-center justify-center rounded-full bg-black/30 text-white transition-colors hover:bg-black/50"
-      >
-        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-          <path d="M6 3l5 5-5 5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-        </svg>
-      </button>
-
-      <div className="absolute bottom-4 left-1/2 z-10 flex -translate-x-1/2 gap-2 rounded-full bg-black/30 px-3 py-2">
-        {slides.map((slide, i) => (
-          <button
-            key={slide.src}
-            type="button"
-            aria-label={`Prikaži sliku ${i + 1}`}
-            onClick={() => setIndex(i)}
-            className="h-1.5 rounded-full transition-all"
-            style={{
-              width: i === index ? "20px" : "6px",
-              backgroundColor: i === index ? "#ffffff" : "rgba(255,255,255,0.5)",
-            }}
-          />
-        ))}
+    <div className="relative aspect-[4/5] w-full overflow-hidden rounded-sm bg-[#141414]">
+      <Image
+        src="https://zeliak7tezbysyo8.public.blob.vercel-storage.com/images/about/milutin-stankovic-02.webp"
+        alt={
+          locale === "sr"
+            ? "Milutin Stanković, inženjer arhitekture, STAN.design"
+            : "Milutin Stanković, architectural engineer, STAN.design"
+        }
+        fill
+        sizes="(min-width: 768px) 50vw, 100vw"
+        className="object-cover object-top"
+        priority
+      />
+      <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent px-6 py-6">
+        <p className="text-lg font-medium text-white">Milutin Stanković</p>
+        <p className="text-sm text-white/75">
+          {locale === "sr" ? "inženjer arhitekture" : "architectural engineer"}
+        </p>
       </div>
     </div>
   );
