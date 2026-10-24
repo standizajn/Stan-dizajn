@@ -14,6 +14,11 @@ export interface ProcessStep {
   description: string;
 }
 
+export interface Stat {
+  value: string;
+  label: string;
+}
+
 export interface PortfolioProject {
   title: string;
   category: string;
@@ -35,6 +40,7 @@ export interface SiteContent {
     subtitle: string;
     cta: string;
   };
+  stats: Stat[];
   services: {
     heading: string;
     kicker: string;
@@ -98,6 +104,11 @@ export const content: Record<Locale, SiteContent> = {
         "Dizajniramo, vizuelizujemo i izrađujemo nameštaj po meri — sve pod jednim krovom, bez trke između izvođača i dizajnera.",
       cta: "Zakaži poziv",
     },
+    stats: [
+      { value: "120+", label: "Završenih projekata" },
+      { value: "20+ godina", label: "u opremanju enterijera" },
+      { value: "Širom Srbije", label: "Niš, Beograd i drugi gradovi" },
+    ],
     services: {
       kicker: "Usluge",
       heading: "Sve što je potrebno da prostor postane vaš.",
@@ -284,6 +295,11 @@ export const content: Record<Locale, SiteContent> = {
         "We design, visualize and build custom furniture — all under one roof, without the back-and-forth between contractors and designers.",
       cta: "Schedule a call",
     },
+    stats: [
+      { value: "120+", label: "Completed projects" },
+      { value: "20+ years", label: "in interior design" },
+      { value: "Across Serbia", label: "Niš, Belgrade and other cities" },
+    ],
     services: {
       kicker: "Services",
       heading: "Everything it takes to make a space truly yours.",
