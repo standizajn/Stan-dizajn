@@ -10,8 +10,10 @@ export default function Production() {
   return (
     <section className="bg-[#fafaf8] px-6 py-24 md:px-10 md:py-32">
       <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-12 md:grid-cols-2 md:gap-20">
-        <ProductionSlider />
-        <div>
+        <div className="order-2 md:order-1">
+          <ProductionSlider />
+        </div>
+        <div className="order-1 md:order-2">
           <p className="text-xs font-medium tracking-[0.2em] text-[#8a8378] uppercase">
             {t.production.kicker}
           </p>
