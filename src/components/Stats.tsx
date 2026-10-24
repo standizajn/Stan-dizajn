@@ -2,6 +2,7 @@
 
 import { display } from "@/lib/fonts";
 import { useLanguage } from "@/lib/LanguageProvider";
+import { siteMeta } from "@/lib/content";
 
 export default function Stats() {
   const { t } = useLanguage();
@@ -19,6 +20,22 @@ export default function Stats() {
             </div>
           ))}
         </div>
+      </div>
+
+      <div className="mt-6 flex justify-center">
+        <a
+          href={siteMeta.instagram}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Instagram"
+          className="flex h-9 w-9 items-center justify-center rounded-full border border-black/10 text-[#141414] transition-colors hover:bg-black/5"
+        >
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" strokeWidth="1.8" />
+            <circle cx="12" cy="12" r="4.5" stroke="currentColor" strokeWidth="1.8" />
+            <circle cx="17.3" cy="6.7" r="1.2" fill="currentColor" />
+          </svg>
+        </a>
       </div>
     </section>
   );
