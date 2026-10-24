@@ -9,6 +9,7 @@ import Production from "@/components/Production";
 import Portfolio from "@/components/Portfolio";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import StickyCallButton from "@/components/StickyCallButton";
 
 export default function HomeSections() {
   return (
@@ -26,6 +27,7 @@ export default function HomeSections() {
         <Contact />
       </main>
       <Footer />
+      <StickyCallButton />
     </>
   );
 }
