@@ -50,6 +50,11 @@ export interface SiteContent {
     kicker: string;
     paragraphs: string[];
   };
+  production: {
+    heading: string;
+    kicker: string;
+    paragraphs: string[];
+  };
   portfolio: {
     heading: string;
     kicker: string;
@@ -177,6 +182,13 @@ export const content: Record<Locale, SiteContent> = {
       paragraphs: [
         "Naš tim čine arhitekta i dizajner enterijera, u saradnji sa proverenim izvođačima radova. Spajamo projektovanje, 3D vizuelizaciju i izradu nameštaja po meri u jedan proces, tako da imate kontakt sa jednom osobom od prve ideje do useljenja.",
         "Radionica naših izvođača se nalazi u Nišu, gde proizvodimo nameštaj po meri uz modernu opremu i pažljivu kontrolu kvaliteta svakog komada.",
+      ],
+    },
+    production: {
+      kicker: "Proizvodnja",
+      heading: "Ko proizvodi vaš nameštaj?",
+      paragraphs: [
+        "Iza svakog našeg projekta stoje iskusne ruke majstora iz radionice 'Topić Enterijeri'. Sa više od 20 godina iskustva, naši partneri su proizvodnju nameštaja usavršili do nivoa umetnosti. Njihova kreativnost, preciznost i posvećenost detaljima pretvaraju naše ideje u kvalitetan nameštaj koji vaš dom čini lepšim i funkcionalnijim.",
       ],
     },
     portfolio: {
@@ -356,6 +368,13 @@ export const content: Record<Locale, SiteContent> = {
       paragraphs: [
         "Our team consists of an architect and an interior designer, working with trusted contractors. We combine design, 3D visualization and custom furniture production into a single process, so you have one point of contact from the first idea to move-in.",
         "Our contractors' workshop is located in Niš, where we produce custom furniture using modern equipment and careful quality control of every piece.",
+      ],
+    },
+    production: {
+      kicker: "Production",
+      heading: "Who makes your furniture?",
+      paragraphs: [
+        "Behind every one of our projects are the skilled hands of craftsmen from the 'Topić Enterijeri' workshop. With more than 20 years of experience, our partners have perfected furniture-making to an art form. Their creativity, precision and attention to detail turn our ideas into quality furniture that makes your home more beautiful and functional.",
       ],
     },
     portfolio: {
