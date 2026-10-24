@@ -20,8 +20,8 @@ export default function HomeSections() {
         <Services />
         <Process />
         <About />
-        <Compare />
         <Production />
+        <Compare />
         <Portfolio />
         <Contact />
       </main>

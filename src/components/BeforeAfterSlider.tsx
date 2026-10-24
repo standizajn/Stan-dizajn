@@ -57,8 +57,8 @@ export default function BeforeAfterSlider({
       onPointerUp={handlePointerUp}
     >
       <Image
-        src={beforeSrc}
-        alt={beforeAlt}
+        src={afterSrc}
+        alt={afterAlt}
         fill
         sizes="(min-width: 768px) 50vw, 100vw"
         className="object-cover"
@@ -69,8 +69,8 @@ export default function BeforeAfterSlider({
         style={{ clipPath: `inset(0 ${100 - position}% 0 0)` }}
       >
         <Image
-          src={afterSrc}
-          alt={afterAlt}
+          src={beforeSrc}
+          alt={beforeAlt}
           fill
           sizes="(min-width: 768px) 50vw, 100vw"
           className="object-cover"
