@@ -4,6 +4,7 @@ import Stats from "@/components/Stats";
 import Services from "@/components/Services";
 import Process from "@/components/Process";
 import About from "@/components/About";
+import Compare from "@/components/Compare";
 import Production from "@/components/Production";
 import Portfolio from "@/components/Portfolio";
 import Contact from "@/components/Contact";
@@ -19,6 +20,7 @@ export default function HomeSections() {
         <Services />
         <Process />
         <About />
+        <Compare />
         <Production />
         <Portfolio />
         <Contact />
