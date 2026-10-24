@@ -29,8 +29,7 @@ export default function StickyCallButton() {
 
   const visible = pastHero && !nearContact;
 
-  const firstName = siteMeta.founder.split(" ")[0];
-  const label = locale === "sr" ? `Pozovi ${firstName}a` : `Call ${firstName}`;
+  const label = locale === "sr" ? "Pozovite" : "Call";
 
   return (
     <div
