@@ -64,6 +64,7 @@ export interface SiteContent {
   compare: {
     heading: string;
     kicker: string;
+    description: string;
     labelBefore: string;
     labelAfter: string;
   };
@@ -203,7 +204,9 @@ export const content: Record<Locale, SiteContent> = {
     },
     compare: {
       kicker: "Od ideje do realizacije",
-      heading: "3D prikaz naspram izvedenog stanja",
+      heading: "Ono što vidite, to i dobijete",
+      description:
+        "Pre nego što se iseče prva ploča, vidite svoj prostor u 3D-u. Menjamo dok ne budete potpuno zadovoljni. Onda pravimo tačno to. Pomerite klizač i uporedite.",
       labelBefore: "3D prikaz",
       labelAfter: "Završeno",
     },
@@ -400,7 +403,9 @@ export const content: Record<Locale, SiteContent> = {
     },
     compare: {
       kicker: "From idea to reality",
-      heading: "3D render versus the finished space",
+      heading: "What you see is what you get",
+      description:
+        "Before the first panel is cut, you see your space in 3D. We revise until you're completely satisfied. Then we build exactly that. Drag the slider to compare.",
       labelBefore: "3D render",
       labelAfter: "Finished",
     },

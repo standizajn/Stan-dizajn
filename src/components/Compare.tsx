@@ -18,6 +18,9 @@ export default function Compare() {
         >
           {t.compare.heading}
         </h2>
+        <p className="mx-auto mt-4 max-w-2xl text-center text-[15px] leading-relaxed text-[#4a463f]">
+          {t.compare.description}
+        </p>
 
         <div className="mt-10">
           <BeforeAfterSlider
