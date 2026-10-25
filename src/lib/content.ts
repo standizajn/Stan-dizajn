@@ -189,7 +189,7 @@ export const content: Record<Locale, SiteContent> = {
     },
     about: {
       kicker: "O nama",
-      heading: "Ko stoji iza 'STAN Design' ?",
+      heading: "Ko stoji iza STAN.design?",
       paragraphs: [
         "Naš tim čine arhitekta i dizajner enterijera, u saradnji sa proverenim izvođačima radova. Spajamo projektovanje, 3D vizuelizaciju i izradu nameštaja po meri u jedan proces, tako da imate kontakt sa jednom osobom od prve ideje do useljenja.",
         "Radionica naših izvođača se nalazi u Nišu, gde proizvodimo nameštaj po meri uz modernu opremu i pažljivu kontrolu kvaliteta svakog komada.",
@@ -380,7 +380,7 @@ export const content: Record<Locale, SiteContent> = {
     },
     about: {
       kicker: "About us",
-      heading: "Who's behind 'STAN Design' ?",
+      heading: "Who's behind STAN.design?",
       paragraphs: [
         "Our team consists of an architect and an interior designer, working with trusted contractors. We combine design, 3D visualization and custom furniture production into a single process, so you have one point of contact from the first idea to move-in.",
         "Our contractors' workshop is located in Niš, where we produce custom furniture using modern equipment and careful quality control of every piece.",
