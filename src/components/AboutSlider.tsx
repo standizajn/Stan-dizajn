@@ -9,7 +9,7 @@ export default function AboutSlider() {
   return (
     <div className="relative aspect-[4/5] w-full overflow-hidden rounded-sm bg-[#141414]">
       <Image
-        src="https://zeliak7tezbysyo8.public.blob.vercel-storage.com/images/about/milutin-stankovic.webp"
+        src="https://zeliak7tezbysyo8.public.blob.vercel-storage.com/images/about/milutin-stankovic-02.webp"
         alt={
           locale === "sr"
             ? "Milutin Stanković, inženjer arhitekture, STAN.design"
