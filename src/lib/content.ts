@@ -105,7 +105,7 @@ export const content: Record<Locale, SiteContent> = {
       cta: "Zakaži poziv",
     },
     stats: [
-      { value: "120+", label: "Završenih projekata" },
+      { value: "60+", label: "Završenih projekata" },
       { value: "20+ godina", label: "u opremanju enterijera" },
       { value: "Širom Srbije", label: "Niš, Beograd i drugi gradovi" },
     ],
@@ -296,7 +296,7 @@ export const content: Record<Locale, SiteContent> = {
       cta: "Schedule a call",
     },
     stats: [
-      { value: "120+", label: "Completed projects" },
+      { value: "60+", label: "Completed projects" },
       { value: "20+ years", label: "in interior design" },
       { value: "Across Serbia", label: "Niš, Belgrade and other cities" },
     ],
