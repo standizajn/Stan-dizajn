@@ -96,13 +96,13 @@ export const content: Record<Locale, SiteContent> = {
       about: "O nama",
       portfolio: "Portfolio",
       contact: "Kontakt",
-      cta: "Zakaži poziv",
+      cta: "Zakažite poziv",
     },
     hero: {
       title: "Dizajn enterijera i nameštaj po meri\nu Nišu, od prve skice do useljenja.",
       subtitle:
         "Dizajniramo, vizuelizujemo i izrađujemo nameštaj po meri — sve pod jednim krovom, bez trke između izvođača i dizajnera.",
-      cta: "Zakaži poziv",
+      cta: "Zakažite poziv",
     },
     stats: [
       { value: "60+", label: "Završenih projekata" },
