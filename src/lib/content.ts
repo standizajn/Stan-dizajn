@@ -208,6 +208,19 @@ export const content: Record<Locale, SiteContent> = {
       comingSoon: "Klikni na projekat za više fotografija.",
       projects: [
         {
+          title: "Kuhinja pastelnih boja za mladi bračni par",
+          category: "Kuhinja i trpezarija",
+          description: "Kuhinja po meri u mekim, pastelnim tonovima, projektovana za mlad bračni par.",
+          images: [
+            "https://zeliak7tezbysyo8.public.blob.vercel-storage.com/images/portfolio/kuhinja-pastelna-01.webp",
+            "https://zeliak7tezbysyo8.public.blob.vercel-storage.com/images/portfolio/kuhinja-pastelna-02.webp",
+            "https://zeliak7tezbysyo8.public.blob.vercel-storage.com/images/portfolio/kuhinja-pastelna-03.webp",
+            "https://zeliak7tezbysyo8.public.blob.vercel-storage.com/images/portfolio/kuhinja-pastelna-04.webp",
+            "https://zeliak7tezbysyo8.public.blob.vercel-storage.com/images/portfolio/kuhinja-pastelna-05.webp",
+            "https://zeliak7tezbysyo8.public.blob.vercel-storage.com/images/portfolio/kuhinja-pastelna-06.webp",
+          ],
+        },
+        {
           title: "Stan u Beogradu - trpezarija i kuhinja",
           category: "Kuhinja i trpezarija",
           description: "Kuhinja i trpezarija po meri, projektovane i izrađene za ovaj stan.",
@@ -399,6 +412,19 @@ export const content: Record<Locale, SiteContent> = {
       comingSoon:
         "Click a project to see more photos.",
       projects: [
+        {
+          title: "Pastel-colored kitchen for a young couple",
+          category: "Kitchen & dining",
+          description: "Custom kitchen in soft pastel tones, designed for a young married couple.",
+          images: [
+            "https://zeliak7tezbysyo8.public.blob.vercel-storage.com/images/portfolio/kuhinja-pastelna-01.webp",
+            "https://zeliak7tezbysyo8.public.blob.vercel-storage.com/images/portfolio/kuhinja-pastelna-02.webp",
+            "https://zeliak7tezbysyo8.public.blob.vercel-storage.com/images/portfolio/kuhinja-pastelna-03.webp",
+            "https://zeliak7tezbysyo8.public.blob.vercel-storage.com/images/portfolio/kuhinja-pastelna-04.webp",
+            "https://zeliak7tezbysyo8.public.blob.vercel-storage.com/images/portfolio/kuhinja-pastelna-05.webp",
+            "https://zeliak7tezbysyo8.public.blob.vercel-storage.com/images/portfolio/kuhinja-pastelna-06.webp",
+          ],
+        },
         {
           title: "Apartment in Belgrade - dining room and kitchen",
           category: "Kitchen & dining",
