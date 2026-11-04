@@ -233,6 +233,15 @@ export const content: Record<Locale, SiteContent> = {
       comingSoon: "Klikni na projekat za više fotografija.",
       projects: [
         {
+          title: "Dizajn i nameštaj za spavaću sobu u japandi stilu",
+          category: "Stambeni enterijer",
+          description: "Dizajn i nameštaj po meri za spavaću sobu u mirnom, japandi stilu.",
+          images: [
+            "https://zeliak7tezbysyo8.public.blob.vercel-storage.com/images/portfolio/spavaca-japandi-01.webp",
+            "https://zeliak7tezbysyo8.public.blob.vercel-storage.com/images/portfolio/spavaca-japandi-02.webp",
+          ],
+        },
+        {
           title: "Kuhinja pastelnih boja za mladi bračni par",
           category: "Kuhinja i trpezarija",
           description: "Kuhinja po meri u mekim, pastelnim tonovima, projektovana za mlad bračni par.",
@@ -452,6 +461,15 @@ export const content: Record<Locale, SiteContent> = {
       comingSoon:
         "Click a project to see more photos.",
       projects: [
+        {
+          title: "Japandi-style bedroom design and furniture",
+          category: "Residential interior",
+          description: "Custom design and furniture for a calm, japandi-style bedroom.",
+          images: [
+            "https://zeliak7tezbysyo8.public.blob.vercel-storage.com/images/portfolio/spavaca-japandi-01.webp",
+            "https://zeliak7tezbysyo8.public.blob.vercel-storage.com/images/portfolio/spavaca-japandi-02.webp",
+          ],
+        },
         {
           title: "Pastel-colored kitchen for a young couple",
           category: "Kitchen & dining",
