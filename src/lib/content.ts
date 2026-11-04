@@ -41,6 +41,13 @@ export interface SiteContent {
     cta: string;
   };
   stats: Stat[];
+  compare: {
+    heading: string;
+    kicker: string;
+    description: string;
+    labelBefore: string;
+    labelAfter: string;
+  };
   services: {
     heading: string;
     kicker: string;
@@ -109,6 +116,14 @@ export const content: Record<Locale, SiteContent> = {
       { value: "20+ godina", label: "u opremanju enterijera" },
       { value: "Širom Srbije", label: "Niš, Beograd i drugi gradovi" },
     ],
+    compare: {
+      kicker: "Od ideje do realizacije",
+      heading: "Ono što vidite, to i dobijete",
+      description:
+        "Pre nego što se iseče prva ploča, vidite svoj prostor u 3D-u. Menjamo dok ne budete potpuno zadovoljni. Onda pravimo tačno to. Pomerite klizač i uporedite.",
+      labelBefore: "Render",
+      labelAfter: "Završeno",
+    },
     services: {
       kicker: "Usluge",
       heading: "Sve što je potrebno da prostor postane vaš.",
@@ -313,6 +328,14 @@ export const content: Record<Locale, SiteContent> = {
       { value: "20+ years", label: "in interior design" },
       { value: "Across Serbia", label: "Niš, Belgrade and other cities" },
     ],
+    compare: {
+      kicker: "From idea to reality",
+      heading: "What you see is what you get",
+      description:
+        "Before the first panel is cut, you see your space in 3D. We revise until you're completely satisfied. Then we build exactly that. Drag the slider to compare.",
+      labelBefore: "Render",
+      labelAfter: "Finished",
+    },
     services: {
       kicker: "Services",
       heading: "Everything it takes to make a space truly yours.",
