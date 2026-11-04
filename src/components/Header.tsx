@@ -28,13 +28,13 @@ export default function Header() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  const onPricingPage = pathname === "/cene";
-  const isLight = !onPricingPage && !scrolled && !menuOpen;
-  const solid = onPricingPage || scrolled || menuOpen;
+  const isHomeRoute = pathname === "/" || pathname === "/en";
+  const isLight = isHomeRoute && !scrolled && !menuOpen;
+  const solid = !isHomeRoute || scrolled || menuOpen;
   const getHref = (id: string) =>
-    id === "cene" ? "/cene" : `${onPricingPage ? "/" : ""}#${id}`;
-  const contactHref = `${onPricingPage ? "/" : ""}#contact`;
-  const logoHref = onPricingPage ? "/" : "#top";
+    id === "cene" ? "/cene" : `${isHomeRoute ? "" : "/"}#${id}`;
+  const contactHref = `${isHomeRoute ? "" : "/"}#contact`;
+  const logoHref = isHomeRoute ? "#top" : "/";
 
   return (
     <header

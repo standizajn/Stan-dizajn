@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { display } from "@/lib/fonts";
 import { useLanguage } from "@/lib/LanguageProvider";
 
@@ -27,11 +28,29 @@ export default function Services() {
               <span className="text-sm font-medium text-[#b5673d]">
                 {String(i + 1).padStart(2, "0")}
               </span>
-              <h3
-                className={`${display.className} mt-3 text-2xl font-medium text-[#141414]`}
-              >
-                {service.title}
-              </h3>
+              {service.href ? (
+                <Link
+                  href={service.href}
+                  className={`${display.className} mt-3 inline-flex w-fit items-center gap-2 text-2xl font-medium text-[#141414] transition-opacity hover:opacity-70`}
+                >
+                  {service.title}
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                    <path
+                      d="M4 12L12 4M12 4H6M12 4V10"
+                      stroke="currentColor"
+                      strokeWidth="1.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                </Link>
+              ) : (
+                <h3
+                  className={`${display.className} mt-3 text-2xl font-medium text-[#141414]`}
+                >
+                  {service.title}
+                </h3>
+              )}
               <p className="mt-4 text-[15px] leading-relaxed text-[#4a463f]">
                 {service.description}
               </p>
