@@ -11,7 +11,7 @@ export default function DizajnEnterijeraContent() {
   return (
     <section className="bg-[#fafaf8] px-6 py-16 md:px-10 md:py-24">
       <div className="mx-auto max-w-7xl">
-        <div className="grid grid-cols-1 items-center gap-10 md:grid-cols-2 md:gap-16">
+        <div className="grid grid-cols-1 items-start gap-10 md:grid-cols-2 md:gap-16">
           <div className="relative aspect-[4/5] w-full overflow-hidden rounded-sm">
             <Image
               src="https://zeliak7tezbysyo8.public.blob.vercel-storage.com/images/service-pages/dizajn-enterijera-hero.webp"
@@ -38,26 +38,24 @@ export default function DizajnEnterijeraContent() {
                 ? "Od ideje i 3D vizualizacije do izvođenja i nameštaja po meri."
                 : "From idea and 3D visualization to execution and custom furniture."}
             </p>
-          </div>
-        </div>
 
-        <div className="mt-16 max-w-3xl md:mt-24">
-          <p className="text-[15px] leading-relaxed text-[#4a463f]">
-            {service.description}
-          </p>
-          {service.bullets && (
-            <ul className="mt-6 space-y-3">
-              {service.bullets.map((bullet) => (
-                <li
-                  key={bullet}
-                  className="flex items-start gap-2.5 text-[15px] leading-snug text-[#4a463f]"
-                >
-                  <span className="mt-2 h-1 w-1 shrink-0 rounded-full bg-[#8a8378]" />
-                  {bullet}
-                </li>
-              ))}
-            </ul>
-          )}
+            <p className="mt-6 text-[15px] leading-relaxed text-[#4a463f]">
+              {service.description}
+            </p>
+            {service.bullets && (
+              <ul className="mt-6 space-y-3">
+                {service.bullets.map((bullet) => (
+                  <li
+                    key={bullet}
+                    className="flex items-start gap-2.5 text-[15px] leading-snug text-[#4a463f]"
+                  >
+                    <span className="mt-2 h-1 w-1 shrink-0 rounded-full bg-[#8a8378]" />
+                    {bullet}
+                  </li>
+                ))}
+              </ul>
+            )}
+          </div>
         </div>
       </div>
     </section>
