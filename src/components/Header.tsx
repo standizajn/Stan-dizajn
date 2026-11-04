@@ -32,9 +32,7 @@ export default function Header() {
   const isLight = !onPricingPage && !scrolled && !menuOpen;
   const solid = onPricingPage || scrolled || menuOpen;
   const getHref = (id: string) =>
-    id === "services" || id === "cene"
-      ? "/cene"
-      : `${onPricingPage ? "/" : ""}#${id}`;
+    id === "cene" ? "/cene" : `${onPricingPage ? "/" : ""}#${id}`;
   const contactHref = `${onPricingPage ? "/" : ""}#contact`;
   const logoHref = onPricingPage ? "/" : "#top";
 
