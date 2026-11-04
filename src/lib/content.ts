@@ -30,6 +30,7 @@ export interface PortfolioProject {
 export interface SiteContent {
   nav: {
     services: string;
+    cene: string;
     process: string;
     about: string;
     portfolio: string;
@@ -100,6 +101,7 @@ export const content: Record<Locale, SiteContent> = {
   sr: {
     nav: {
       services: "Usluge",
+      cene: "Cene",
       process: "Kako radimo",
       about: "O nama",
       portfolio: "Portfolio",
@@ -315,6 +317,7 @@ export const content: Record<Locale, SiteContent> = {
   en: {
     nav: {
       services: "Services",
+      cene: "Prices",
       process: "How we work",
       about: "About",
       portfolio: "Portfolio",

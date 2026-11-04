@@ -8,6 +8,7 @@ import { useLanguage } from "@/lib/LanguageProvider";
 
 const sections = [
   { id: "services", key: "services" as const },
+  { id: "cene", key: "cene" as const },
   { id: "process", key: "process" as const },
   { id: "about", key: "about" as const },
   { id: "portfolio", key: "portfolio" as const },
@@ -31,7 +32,9 @@ export default function Header() {
   const isLight = !onPricingPage && !scrolled && !menuOpen;
   const solid = onPricingPage || scrolled || menuOpen;
   const getHref = (id: string) =>
-    id === "services" ? "/cene" : `${onPricingPage ? "/" : ""}#${id}`;
+    id === "services" || id === "cene"
+      ? "/cene"
+      : `${onPricingPage ? "/" : ""}#${id}`;
   const contactHref = `${onPricingPage ? "/" : ""}#contact`;
   const logoHref = onPricingPage ? "/" : "#top";
 
