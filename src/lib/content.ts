@@ -6,6 +6,7 @@ export interface Service {
   title: string;
   description: string;
   bullets?: string[];
+  priceLabel?: string;
 }
 
 export interface ProcessStep {
@@ -129,7 +130,8 @@ export const content: Record<Locale, SiteContent> = {
       heading: "Sve što je potrebno da prostor postane vaš.",
       items: [
         {
-          title: "Dizajn i projektovanje enterijera",
+          title: "Dizajn enterijera",
+          priceLabel: "od 12€ po m²",
           description:
             "Kompletna razrada prostora — od rasporeda do realističnog prikaza, pre nego što bilo šta počne da se gradi ili kupuje. U okviru usluge dobijate:",
           bullets: [
@@ -146,11 +148,13 @@ export const content: Record<Locale, SiteContent> = {
         },
         {
           title: "3D vizuelizacija",
+          priceLabel: "od 5,5€ po m² ili od 30€ po renderu",
           description:
             "Fotorealistični prikaz vašeg prostora, uključen u paket dizajna enterijera, ali dostupan i kao samostalna usluga — za sve koje zanima samo render, bez kompletnog projektovanja. Idealno za predstavljanje ideje pre gradnje, prodaju nekretnine ili proveru kako će odabrani materijali i raspored izgledati u prostoru.",
         },
         {
           title: "Nameštaj po meri",
+          priceLabel: "Pozovi za upit",
           description: "Izrada nameštaja prilagođenog tačno vašem prostoru:",
           bullets: [
             "Kuhinje po meri",
@@ -341,7 +345,8 @@ export const content: Record<Locale, SiteContent> = {
       heading: "Everything it takes to make a space truly yours.",
       items: [
         {
-          title: "Interior design & planning",
+          title: "Interior design",
+          priceLabel: "from €12/m²",
           description:
             "A complete plan for your space — from layout to a realistic preview, before anything is built or bought. This service includes:",
           bullets: [
@@ -358,11 +363,13 @@ export const content: Record<Locale, SiteContent> = {
         },
         {
           title: "3D visualization",
+          priceLabel: "from €5.5/m² or from €30 per render",
           description:
             "A photorealistic view of your space, included in the interior design package but also available as a standalone service — for anyone who just wants a render, without full design work. Ideal for presenting an idea before construction, selling a property, or checking how chosen materials and layout will look in the space.",
         },
         {
           title: "Custom furniture",
+          priceLabel: "Call for a quote",
           description: "Furniture made to fit your space exactly:",
           bullets: [
             "Custom kitchens",

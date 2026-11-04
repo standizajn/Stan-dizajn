@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
 import Logo from "@/components/Logo";
 import LanguageToggle from "@/components/LanguageToggle";
 import { useLanguage } from "@/lib/LanguageProvider";
@@ -15,6 +16,7 @@ const sections = [
 
 export default function Header() {
   const { t } = useLanguage();
+  const pathname = usePathname();
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -25,18 +27,24 @@ export default function Header() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  const isLight = !scrolled && !menuOpen;
+  const onPricingPage = pathname === "/cene";
+  const isLight = !onPricingPage && !scrolled && !menuOpen;
+  const solid = onPricingPage || scrolled || menuOpen;
+  const getHref = (id: string) =>
+    id === "services" ? "/cene" : `${onPricingPage ? "/" : ""}#${id}`;
+  const contactHref = `${onPricingPage ? "/" : ""}#contact`;
+  const logoHref = onPricingPage ? "/" : "#top";
 
   return (
     <header
       className="fixed inset-x-0 top-0 z-50 transition-colors duration-300"
       style={{
-        backgroundColor: scrolled || menuOpen ? "#fafaf8" : "transparent",
-        borderBottom: scrolled || menuOpen ? "1px solid rgba(20,20,20,0.08)" : "1px solid transparent",
+        backgroundColor: solid ? "#fafaf8" : "transparent",
+        borderBottom: solid ? "1px solid rgba(20,20,20,0.08)" : "1px solid transparent",
       }}
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-3 md:px-10">
-        <a href="#top" className="shrink-0">
+        <a href={logoHref} className="shrink-0">
           <Logo mode={isLight ? "light" : "dark"} className="scale-[0.8] md:scale-90" />
         </a>
 
@@ -44,7 +52,7 @@ export default function Header() {
           {sections.map((s) => (
             <a
               key={s.id}
-              href={`#${s.id}`}
+              href={getHref(s.id)}
               className="text-sm font-medium tracking-wide transition-opacity hover:opacity-60"
               style={{ color: isLight ? "#ffffff" : "#141414" }}
             >
@@ -56,7 +64,7 @@ export default function Header() {
         <div className="hidden items-center gap-6 md:flex">
           <LanguageToggle mode={isLight ? "light" : "dark"} />
           <a
-            href="#contact"
+            href={contactHref}
             className="rounded-full border px-5 py-2 text-sm font-medium tracking-wide transition-colors"
             style={{
               borderColor: isLight ? "#ffffff" : "#141414",
@@ -96,7 +104,7 @@ export default function Header() {
           {sections.map((s) => (
             <a
               key={s.id}
-              href={`#${s.id}`}
+              href={getHref(s.id)}
               onClick={() => setMenuOpen(false)}
               className="py-2 text-base font-medium text-[#141414]"
             >
@@ -106,7 +114,7 @@ export default function Header() {
           <div className="mt-2 flex items-center justify-between border-t border-black/10 pt-4">
             <LanguageToggle mode="dark" />
             <a
-              href="#contact"
+              href={contactHref}
               onClick={() => setMenuOpen(false)}
               className="rounded-full border border-[#141414] px-5 py-2 text-sm font-medium text-[#141414]"
             >

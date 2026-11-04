@@ -2,12 +2,13 @@
 
 import { display } from "@/lib/fonts";
 import { useLanguage } from "@/lib/LanguageProvider";
+import CallButton from "@/components/CallButton";
 
-export default function Services() {
+export default function PricingCards() {
   const { t } = useLanguage();
 
   return (
-    <section id="services" className="bg-[#fafaf8] px-6 py-24 md:px-10 md:py-32">
+    <section className="bg-[#fafaf8] px-6 py-24 md:px-10 md:py-32">
       <div className="mx-auto max-w-7xl">
         <p className="text-xs font-medium tracking-[0.2em] text-[#8a8378] uppercase">
           {t.services.kicker}
@@ -32,6 +33,14 @@ export default function Services() {
               >
                 {service.title}
               </h3>
+              {service.priceLabel && (
+                <div className="mt-3 flex items-center gap-2">
+                  <span className="text-sm font-medium text-[#141414]">
+                    {service.priceLabel}
+                  </span>
+                  {i === 2 && <CallButton />}
+                </div>
+              )}
               <p className="mt-4 text-[15px] leading-relaxed text-[#4a463f]">
                 {service.description}
               </p>
