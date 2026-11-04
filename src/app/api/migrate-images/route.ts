@@ -16,6 +16,7 @@ export async function GET(req: NextRequest) {
       access: "public",
       contentType: "image/webp",
       addRandomSuffix: false,
+      allowOverwrite: true,
     });
     results[key] = blob.url;
   }
