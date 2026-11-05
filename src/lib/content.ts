@@ -233,6 +233,18 @@ export const content: Record<Locale, SiteContent> = {
       comingSoon: "Klikni na projekat za više fotografija.",
       projects: [
         {
+          title: "Vizuelizacija enterijera za stan u Podgorici",
+          category: "3D vizuelizacija",
+          description: "Fotorealistični 3D prikaz enterijera stana, pre izvođenja radova.",
+          images: [
+            "https://zeliak7tezbysyo8.public.blob.vercel-storage.com/images/portfolio/podgorica-viz-01.webp",
+            "https://zeliak7tezbysyo8.public.blob.vercel-storage.com/images/portfolio/podgorica-viz-02.webp",
+            "https://zeliak7tezbysyo8.public.blob.vercel-storage.com/images/portfolio/podgorica-viz-03.webp",
+            "https://zeliak7tezbysyo8.public.blob.vercel-storage.com/images/portfolio/podgorica-viz-04.webp",
+            "https://zeliak7tezbysyo8.public.blob.vercel-storage.com/images/portfolio/podgorica-viz-05.webp",
+          ],
+        },
+        {
           title: "Dizajn i nameštaj za spavaću sobu u japandi stilu",
           category: "Stambeni enterijer",
           description: "Dizajn i nameštaj po meri za spavaću sobu u mirnom, japandi stilu.",
@@ -461,6 +473,18 @@ export const content: Record<Locale, SiteContent> = {
       comingSoon:
         "Click a project to see more photos.",
       projects: [
+        {
+          title: "Interior visualization for an apartment in Podgorica",
+          category: "3D visualization",
+          description: "Photorealistic 3D preview of the apartment's interior, before construction.",
+          images: [
+            "https://zeliak7tezbysyo8.public.blob.vercel-storage.com/images/portfolio/podgorica-viz-01.webp",
+            "https://zeliak7tezbysyo8.public.blob.vercel-storage.com/images/portfolio/podgorica-viz-02.webp",
+            "https://zeliak7tezbysyo8.public.blob.vercel-storage.com/images/portfolio/podgorica-viz-03.webp",
+            "https://zeliak7tezbysyo8.public.blob.vercel-storage.com/images/portfolio/podgorica-viz-04.webp",
+            "https://zeliak7tezbysyo8.public.blob.vercel-storage.com/images/portfolio/podgorica-viz-05.webp",
+          ],
+        },
         {
           title: "Japandi-style bedroom design and furniture",
           category: "Residential interior",
